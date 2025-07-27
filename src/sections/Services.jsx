@@ -1,7 +1,7 @@
 import React from 'react';
-import Service1 from '../assets/service1.png';
-import Service2 from '../assets/service2.png';
-import Service3 from '../assets/service3.png';
+import Service1 from '../assets/web-design.jpeg';
+import Service2 from '../assets/web-development.jpeg';
+import Service3 from '../assets/ecomm-development.jpeg';
 
 function Services() {
   const services = [
