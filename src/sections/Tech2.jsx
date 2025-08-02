@@ -6,7 +6,7 @@ export default function EcommerceSection() {
     <section className="bg-white px-4 sm:px-6 py-12">
       <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
         {/* Text Content */}
-        <div className="w-full md:w-1/2 mt-8 md:mt-0">
+        <div className="w-full md:w-1/2 mt-3 md:mt-0">
           <p className="text-gray-800 mb-6 text-sm sm:text-base hidden sm:block">
             Ecommerce is our specialization. We’re not just an ecommerce website development
             company in Toronto, however, we provide complete A to Z e-commerce solution:

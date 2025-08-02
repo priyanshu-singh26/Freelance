@@ -25,7 +25,7 @@ function Services() {
   return (
     <section className="bg-slate-50 py-16">
       <div className="container mx-auto px-4">
-        <h1 className="text-[72px] font-bold text-[#d0d0ec] absolute top-368  left-128 z-0 select-none hidden md:block">
+        <h1 className="text-[72px] font-bold text-[#d0d0ec] absolute items-center mt-[-65px] left-128 z-0 select-none hidden md:block">
           Services
         </h1>
         {/* Mobile carousel view */}
@@ -34,7 +34,7 @@ function Services() {
           Services
         </h2>
         </div>
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-12 relative z-10">
+        <h2 className="text-3xl md:text-2xl font-bold text-center text-gray-800 mb-12 relative z-10">
           We Serve What We Have Expertise in
         </h2>
         <div className="grid md:grid-cols-3 gap-8">

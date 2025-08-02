@@ -46,7 +46,7 @@ export default function FAQSection() {
 
   return (
     <section
-      className="max-w-7xl mx-auto px-4 py-10 sm:py-14"
+      className="max-w-7xl mx-auto px-4 py-14 sm:py-14"
       aria-labelledby="faq-heading"
     >
       <h2

@@ -23,10 +23,10 @@ export default function OurCaseStudies() {
   return (
     <section className="bg-white py-12 px-4 sm:px-6 max-w-7xl mx-auto">
       <div className="text-center mb-8 relative">
-        <h1 className="text-[72px] font-bold text-[#d0d0ec] absolute top-[-50px] left-1/2 -translate-x-1/2 z-0 select-none hidden md:block">
+        <h1 className="text-[72px] font-bold text-[#d0d0ec] absolute top-[-52px] left-1/2 -translate-x-1/2 z-0 select-none hidden md:block">
           Our Work
         </h1>
-        <h2 className="text-2xl sm:text-3xl font-bold text-[#1b1e37] relative z-10 hidden sm:block">
+        <h2 className="text-3xl md:text-2xl sm:text-3xl top-[10px] font-bold text-[#1b1e37] relative z-10 hidden sm:block">
           Case Studies
         </h2>
         <p className="mt-4 max-w-3xl mx-auto text-gray-700 text-sm sm:text-base hidden sm:block">
@@ -60,7 +60,7 @@ export default function OurCaseStudies() {
         </h2>
         <h2 className="text-xl font-bold text-[#1b1e37] relative z-10">Case Studies</h2>
 
-        <div className="flex items-center justify-between w-full px-6 gap-6">    
+        <div className="flex items-center justify-between w-full gap-6">    
           <button
             onClick={handlePrev}
             className="bg-red-500 text-white p-2 rounded"
@@ -68,7 +68,7 @@ export default function OurCaseStudies() {
             <ChevronLeft size={20} />
           </button>
 
-          <div className="w-11/12">
+          <div className="w-100">
             <img
               src={images[current]}
               alt={`Case Study ${current + 1}`}

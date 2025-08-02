@@ -1,95 +1,87 @@
-import React from "react";
-import {
-  FaFacebookF,
-  FaGooglePlusG,
-  FaPinterestP,
-  FaLinkedinIn,
-  FaTwitter,
-} from "react-icons/fa";
 import logoImage from "../assets/logo.png";
+
+import { FaTwitter, FaFacebookF, FaGooglePlusG, FaPinterestP, FaLinkedinIn } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaLocationDot } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 text-gray-800">
-      <div className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
-        {/* Left Logo and Description */}
+    <footer className="bg-gray-100 pt-10">
+      <div className="px-4 sm:px-6 md:px-0 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 mb-6">
+        {/* Column 1 - Logo & Description */}
         <div>
           <img
-            src={logoImage}
-            alt="Cube Infotech Logo"
-            className="h-10 mb-4"
+            src={logoImage} // replace with your logo path
+            alt="Cube InfoTech Logo"
+            className="h-10 mb-5"
           />
-          <p className="text-sm">
-            Ewebot have much planned for the future, working with great clients and
-            continued software development.
+          <p className="text-gray-600 text-sm mb-5">
+            Ewebot have much planned for the future, working with great clients and continued software development.
           </p>
-          <div className="flex items-center gap-4 mt-4 text-xl text-gray-600">
-            <FaTwitter className="hover:text-blue-500 cursor-pointer" />
-            <FaFacebookF className="hover:text-blue-600 cursor-pointer" />
-            <FaGooglePlusG className="hover:text-red-500 cursor-pointer" />
-            <FaPinterestP className="hover:text-red-600 cursor-pointer" />
-            <FaLinkedinIn className="hover:text-blue-700 cursor-pointer" />
+          <div className="flex gap-3 text-gray-600 text-lg">
+            <FaTwitter />
+            <FaFacebookF />
+            <FaGooglePlusG />
+            <FaPinterestP />
+            <FaLinkedinIn />
           </div>
         </div>
 
-        {/* Contact Info */}
-        <div>
-          <div className="flex items-start gap-3 mb-4">
-            <img
-              src="/images/email-icon.png"
-              alt="Email"
-              className="w-6 h-6"
-            />
+        {/* Column 2 - Contact Info */}
+        <div className="space-y-4">
+          <div className="flex items-start gap-3">
+            <MdEmail className="text-red-500 text-2xl" />
             <div>
-              <p className="text-sm font-medium">9024225444</p>
-              <p className="text-sm">info@digitalera.com</p>
+              <p className="text-sm text-gray-800 font-medium">9024225444</p>
+              <a href="mailto:info@digitalera.com" className="text-sm text-gray-600 hover:text-blue-600">
+                info@digitalera.com
+              </a>
             </div>
           </div>
           <div className="flex items-start gap-3">
-            <img
-              src="/images/location-icon.png"
-              alt="Location"
-              className="w-6 h-6"
-            />
-            <div>
-              <p className="text-sm">
-                27 Division St, New York, NY 10002, United States
-              </p>
+            <FaLocationDot className="text-red-500 text-xl mt-1" />
+            <div className="text-sm text-gray-600">
+              <p>27 Division St, New York, NY</p>
+              <p>10002, United States</p>
             </div>
           </div>
         </div>
 
-        {/* Links Column 1 */}
-        <div className="text-sm">
-          <p className="font-medium mb-2">SEO Services</p>
-          <ul className="space-y-1">
-            <li>SEO Marketing</li>
-            <li>SEO Services</li>
-            <li>Pay Per Click</li>
-            <li>Social Media</li>
-            <li>SEO</li>
-            <li>Audit</li>
+        {/* Column 3 - Services */}
+        <div>
+          <ul className="space-y-2 text-sm text-gray-800">
+            <li><a href="#">SEO Marketing</a></li>
+            <li><a href="#">SEO Services</a></li>
+            <li><a href="#">Pay Per Click</a></li>
+            <li><a href="#">Social Media</a></li>
+            <li><a href="#">SEO</a></li>
+            <li><a href="#">Audit</a></li>
           </ul>
         </div>
 
-        {/* Links Column 2 */}
-        <div className="text-sm">
-          <ul className="space-y-1">
-            {/* <li className="font-medium">Our Product</li>
-            <li>Documentation</li>
-            <li>Our Services</li>
-            <li>Company</li>
-            <li>What We Do?</li> */}
-            <li className="font-medium mt-4">Home</li>
-            <li>About Us</li>
-            <li>Main Services</li>
-            <li>Pricing</li>
-            <li>Our Cases</li>
+        {/* Column 4 - Links */}
+        <div>
+          <ul className="space-y-2 text-sm text-gray-800">
+            <li><a href="#">Our Product</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">What We Do?</a></li>
+          </ul>
+        </div>
+
+        {/* Column 5 - Links */}
+        <div>
+          <ul className="space-y-2 text-sm text-gray-800">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Main Services</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Our Cases</a></li>
           </ul>
         </div>
       </div>
-
-      <div className="bg-blue-900 text-white text-center py-4 text-sm">
+      <div className="bg-blue-900 text-white text-center text-sm py-1.5">
         © 2025 — All Rights Reserved.
       </div>
     </footer>

@@ -64,10 +64,10 @@ export default function BlogSection() {
   return (
     <section className="py-16 px-4 md:px-12 bg-white">
       <div className="text-center mb-10">
-        <h1 className="text-[80px] font-extrabold text-[#c7cbe9] leading-none -mb-6">
+        <h1 className="text-[72px] font-extrabold text-[#c7cbe9] leading-none -mb-6">
           Blogs
         </h1>
-        <h2 className="text-2xl md:text-3xl font-bold text-[#091434] z-10 relative">
+        <h2 className="text-3xl md:text-2xl font-bold text-[#091434] z-10 relative">
           See Our Posts
         </h2>
       </div>
@@ -76,13 +76,13 @@ export default function BlogSection() {
       <div className="hidden md:flex justify-end mb-4 pr-4 gap-2">
         <button
           onClick={scrollLeft}
-          className="p-2 bg-red-100 text-red-500 rounded-full hover:bg-red-200"
+          className="p-2 bg-red-100 text-red-500 rounded hover:bg-red-200"
         >
           <ChevronLeft />
         </button>
         <button
           onClick={scrollRight}
-          className="p-2 bg-red-500 text-white rounded-full hover:bg-red-600"
+          className="p-2 bg-red-500 text-white rounded hover:bg-red-600"
         >
           <ChevronRight />
         </button>
@@ -136,13 +136,13 @@ export default function BlogSection() {
         <div className="flex justify-center items-center gap-4 mt-10">
           <button
             onClick={scrollLeft}
-            className="p-2 bg-red-100 text-red-500 rounded-full hover:bg-red-200"
+            className="p-2 bg-red-100 text-red-500 rounded hover:bg-red-200"
           >
             <ChevronLeft />
           </button>
           <button
             onClick={scrollRight}
-            className="p-2 bg-red-500 text-white rounded-full hover:bg-red-600"
+            className="p-2 bg-red-500 text-white rounded hover:bg-red-600"
           >
             <ChevronRight />
           </button>
@@ -151,7 +151,7 @@ export default function BlogSection() {
 
       {/* View More Button */}
       <div className="flex justify-center mt-6">
-        <button className="bg-[#f0422f] hover:bg-[#d23323] text-white font-semibold py-2 px-6 rounded-xl shadow-md">
+        <button className="bg-[#f0422f] hover:bg-[#d23323] text-white font-semibold py-2 px-8 rounded-xl shadow-md">
           View more
         </button>
       </div>

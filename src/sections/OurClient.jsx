@@ -44,11 +44,28 @@ export default function OurClientTestimonials() {
 
   return (
     <section className="bg-[#2433a8] py-12 px-4 text-white">
-      <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-[56px] font-extrabold leading-none text-white opacity-70">
+      <div className="max-w-7xl mx-auto text-center relative">
+
+        {/* Mine */}
+        {/* Mobile */}
+        <div className="relative flex flex-col items-center space-y-4 md:hidden">
+        <h2 className=" text-[35px] font-bold text-[#d0d0ec] absolute top-[-30px] z-0 select-none">
           What our client says
         </h2>
-        <p className="text-xl mt-2 font-medium">Some Client Appreciations</p>
+        <h2 className="text-xl font-bold text-[#1b1e37] relative z-10">Some Client Appreciations</h2>
+        </div>
+        {/* Moile end */}
+        <h1 className="text-6xl md:text-[72px]] font-bold text-[#d0d0ec] absolute top-[-40px] left-1/2 -translate-x-1/2 z-0 select-none hidden md:block">
+          What our client says
+        </h1>
+        <h2 className="text-3xl md:text-2xl sm:text-3xl top-[9px] font-bold text-[#1b1e37] relative z-10 hidden sm:block">
+          Some Client Appreciations
+        </h2>
+        {/* Mine end */}
+        {/* <h2 className="text-6xl md:text-[72px] text-[#d0d0ec] font-bold md:font-extrabold leading-none z-0 ">
+          What our client says
+        </h2>
+        <h2 className="text-3xl md:text-2xl text-[#1b1e37] md:-mt-8 font-bold z-10">Some Client Appreciations</h2> */}
 
         {/* Desktop view */}
         <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
